@@ -119,7 +119,7 @@ COMMENT ON COLUMN Variantes.color
 CREATE TABLE Algoritmos(
   id_algoritmo SERIAL NOT NULL,
   nombre VARCHAR(30) NOT NULL,
-  parametro INTEGER DEFAULT 0,
+  parametro DOUBLE PRECISION,
   algoritmo_entrenado BYTEA,
   CONSTRAINT pk_id_algoritmo PRIMARY KEY (id_algoritmo)
 );
